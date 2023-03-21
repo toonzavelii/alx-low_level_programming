@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc - S -masm=intel $CIFLE
+gcc -S -masm=intel $CFILE
+
