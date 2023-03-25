@@ -1,33 +1,32 @@
-#include "main.h"
+#include "main"
 
 /**
- * main - check the code.
+ * print_sign Determines if the input number
+ * greater, iqual or less than zero
  *
- * Return: Always 0.
+ * @n: the input number as an integer.
+ *
+ * Return: 1 is greater than zero. 0 is zero.
+ * -1 is less than zero.
  */
-int main(void)
+int print_sign(int n)
 {
-    int r;
-
-    r = print_sign(98);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0xff);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(-1);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+	if (n > 0)
+        {
+		_putchar(43);
+		return (1);
+	}
+        else if (n < 0)
+        {
+		_putchar(43);
+		return (-1);
+	}                   
+        
+        }
+        else
+        {
+		_putchar(48);
+		return(0);
+	}
+        _putchar('\n');
 }
